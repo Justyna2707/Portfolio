@@ -1,86 +1,123 @@
 <!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JustCleaning | Profesjonalna firma sprzątająca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#22c55e;
+      --secondary:#0ea5e9;
+      --dark:#0f172a;
+      --light:#f8fafc;
+      --muted:#64748b;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif}
+    body{background:var(--light);color:var(--dark);line-height:1.7}
+    a{text-decoration:none;color:inherit}
 
+    nav{position:sticky;top:0;z-index:10;background:white;display:flex;justify-content:space-between;align-items:center;padding:18px 28px;box-shadow:0 8px 30px rgba(0,0,0,.06)}
+    nav strong{font-size:1.3rem;color:var(--primary)}
+    nav a{margin-left:20px;color:var(--muted);font-weight:500}
+    nav a:hover{color:var(--primary)}
 
-@media(max-width:768px){
-header h1{font-size:2.4rem}
-h2{font-size:2.1rem}
-}
-</style>
+    header{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px;background:radial-gradient(circle at top,#22c55e,#0ea5e9)}
+    header h1{font-size:3.4rem;color:white;margin-bottom:14px}
+    header p{font-size:1.3rem;color:#e0f2fe;max-width:700px;margin:auto}
+    .cta{margin-top:40px;display:inline-block;background:white;color:var(--dark);padding:16px 38px;border-radius:999px;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,.15)}
+
+    section{max-width:1150px;margin:auto;padding:100px 20px}
+    h2{text-align:center;font-size:2.6rem;margin-bottom:60px}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px}
+    .card{background:white;padding:36px;border-radius:22px;box-shadow:0 20px 40px rgba(0,0,0,.08);transition:.3s}
+    .card:hover{transform:translateY(-10px)}
+    .card h3{margin-bottom:14px;color:var(--primary)}
+    .card p{color:var(--muted)}
+
+    .why{background:white}
+
+    .contact-box{max-width:600px;margin:auto;background:white;padding:50px;border-radius:26px;box-shadow:0 20px 40px rgba(0,0,0,.1);text-align:center}
+    .contact-box p{font-size:1.1rem;margin-bottom:14px}
+
+    footer{background:var(--dark);color:#cbd5e1;text-align:center;padding:50px 20px;margin-top:80px}
+
+    @media(max-width:768px){
+      header h1{font-size:2.4rem}
+      h2{font-size:2.1rem}
+    }
+  </style>
 </head>
 <body>
 
-
 <nav>
-<strong>JustCleaning</strong>
-<div>
-<a href="#services">Usługi</a>
-<a href="#about">Dlaczego my</a>
-<a href="#contact">Kontakt</a>
-</div>
+  <strong>JustCleaning</strong>
+  <div>
+    <a href="#services">Usługi</a>
+    <a href="#about">Dlaczego my</a>
+    <a href="#contact">Kontakt</a>
+  </div>
 </nav>
 
-
 <header>
-<div>
-<h1>JustCleaning</h1>
-<p>Profesjonalne sprzątanie mieszkań, domów i biur w Goleniowie i okolicach</p>
-<a href="#contact" class="cta">Zamów darmową wycenę</a>
-</div>
+  <div>
+    <h1>JustCleaning</h1>
+    <p>Profesjonalne sprzątanie mieszkań, domów i biur w Goleniowie i okolicach</p>
+    <a href="#contact" class="cta">Zamów darmową wycenę</a>
+  </div>
 </header>
 
-
 <section id="services">
-<h2>Nasze usługi</h2>
-<div class="grid">
-<div class="card">
-<h3>Sprzątanie mieszkań</h3>
-<p>Dokładne, regularne lub jednorazowe sprzątanie mieszkań i domów.</p>
-</div>
-<div class="card">
-<h3>Sprzątanie biur</h3>
-<p>Czyste i świeże biura, elastyczne godziny i pełna dyskrecja.</p>
-</div>
-<div class="card">
-<h3>Sprzątanie po remoncie</h3>
-<p>Usuwanie kurzu, pyłu i zabrudzeń po pracach remontowych.</p>
-</div>
-</div>
+  <h2>Nasze usługi</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Sprzątanie mieszkań</h3>
+      <p>Dokładne, regularne lub jednorazowe sprzątanie mieszkań i domów.</p>
+    </div>
+    <div class="card">
+      <h3>Sprzątanie biur</h3>
+      <p>Czyste i świeże biura, elastyczne godziny i pełna dyskrecja.</p>
+    </div>
+    <div class="card">
+      <h3>Sprzątanie po remoncie</h3>
+      <p>Usuwanie kurzu, pyłu i zabrudzeń po pracach remontowych.</p>
+    </div>
+  </div>
 </section>
-
 
 <section id="about" class="why">
-<h2>Dlaczego JustCleaning?</h2>
-<div class="grid">
-<div class="card">
-<h3>Doświadczenie</h3>
-<p>Setki posprzątanych mieszkań i zadowoleni klienci.</p>
-</div>
-<div class="card">
-<h3>Bezpieczne środki</h3>
-<p>Używamy skutecznych i ekologicznych środków czystości.</p>
-</div>
-<div class="card">
-<h3>Terminowość</h3>
-<p>Zawsze na czas, bez kompromisów w jakości.</p>
-</div>
-</div>
+  <h2>Dlaczego JustCleaning?</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Doświadczenie</h3>
+      <p>Setki posprzątanych mieszkań i zadowoleni klienci.</p>
+    </div>
+    <div class="card">
+      <h3>Bezpieczne środki</h3>
+      <p>Używamy skutecznych i ekologicznych środków czystości.</p>
+    </div>
+    <div class="card">
+      <h3>Terminowość</h3>
+      <p>Zawsze na czas, bez kompromisów w jakości.</p>
+    </div>
+  </div>
 </section>
-
 
 <section id="contact">
-<h2>Kontakt</h2>
-<div class="contact-box">
-<p>📞 <strong>533 858 447</strong></p>
-<p>📧 justynaniczaj@wp.pl</p>
-<p>📍 Goleniów i okolice</p>
-</div>
+  <h2>Kontakt</h2>
+  <div class="contact-box">
+    <p>📞 <strong>533 858 447</strong></p>
+    <p>📧 justynaniczaj@wp.pl</p>
+    <p>📍 Goleniów i okolice</p>
+  </div>
 </section>
 
-
 <footer>
-© 2026 JustCleaning · Profesjonalna firma sprzątająca
+  © 2026 JustCleaning · Profesjonalna firma sprzątająca
 </footer>
-
 
 </body>
 </html>
