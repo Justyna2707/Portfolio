@@ -15,6 +15,7 @@ body {
     color:#222;
 }
 
+/* ===== HEADER ===== */
 header {
     background: linear-gradient(120deg,#00bcd4,#8e24aa);
     color:#fff;
@@ -47,6 +48,29 @@ header p {
     text-decoration:none;
 }
 
+/* ===== CONTACT BAR ===== */
+.contact-bar {
+    background:#fff;
+    padding:30px 20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.contact-bar h2 {
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.contact-box {
+    font-size:22px;
+    font-weight:900;
+}
+
+.contact-box span {
+    color:#6a1b9a;
+}
+
+/* ===== SECTIONS ===== */
 section {
     padding:70px 20px;
     max-width:1200px;
@@ -78,12 +102,14 @@ h2 {
     font-size:60px;
 }
 
+/* ===== ABOUT ===== */
 .about {
     text-align:center;
     font-size:18px;
     line-height:1.7;
 }
 
+/* ===== TESTIMONIALS ===== */
 .testimonials {
     background:linear-gradient(120deg,#7e57c2,#26c6da);
     color:#fff;
@@ -98,6 +124,7 @@ h2 {
     text-align:center;
 }
 
+/* ===== FOOTER ===== */
 footer {
     background:#111;
     color:#fff;
@@ -109,16 +136,44 @@ footer span {
     color:#ffeb3b;
     font-weight:800;
 }
+
+/* ===== FLOATING CALL BUTTON ===== */
+.call-fixed {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#4caf50;
+    color:white;
+    padding:18px 22px;
+    border-radius:50px;
+    font-size:20px;
+    font-weight:900;
+    text-decoration:none;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    z-index:999;
+}
 </style>
 </head>
 
 <body>
 
+<!-- FLOATING CALL -->
+<a href="tel:533858447" class="call-fixed">📞 Zadzwoń</a>
+
 <header>
     <div class="logo">Just<span>Cleaning</span></div>
     <p>Profesjonalne sprzątanie domów, mieszkań i firm. Czystość, którą widać od razu ✨</p>
-    <a href="tel:533858447" class="btn">📞 533 858 447</a>
+    <a href="tel:533858447" class="btn">Zamów sprzątanie</a>
 </header>
+
+<!-- CONTACT BAR -->
+<div class="contact-bar">
+    <h2>📞 Skontaktuj się z nami</h2>
+    <div class="contact-box">
+        Telefon: <span>533 858 447</span> <br>
+        Email: <span>justjustcleaning@gmail.com</span>
+    </div>
+</div>
 
 <section>
 <h2>Nasze Usługi</h2>
@@ -136,7 +191,7 @@ footer span {
     <div class="service">
         <div class="icon">🏬</div>
         <h3>Firmy</h3>
-        <p>Biura, lokale, firmy – terminowo</p>
+        <p>Biura i lokale usługowe</p>
     </div>
 </div>
 </section>
@@ -144,17 +199,17 @@ footer span {
 <section>
 <h2>Dlaczego JustCleaning?</h2>
 <div class="about">
-    ✔ Doświadczenie<br>
-    ✔ Dokładność<br>
-    ✔ Zaufanie<br><br>
+    ✔ Doświadczenie <br>
+    ✔ Dokładność <br>
+    ✔ Terminowość <br><br>
     Sprzątamy tak, jakbyśmy sprzątali własny dom.
 </div>
 </section>
 
 <section class="testimonials">
 <h2 style="color:white">Opinie Klientów</h2>
-<div class="testimonial">„Idealnie czysto, polecam każdemu!”</div>
-<div class="testimonial">„Najlepsza firma sprzątająca w okolicy”</div>
+<div class="testimonial">„Czysto, szybko i profesjonalnie.”</div>
+<div class="testimonial">„Zawsze punktualnie i dokładnie.”</div>
 </section>
 
 <footer>
