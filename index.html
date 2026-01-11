@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JustCleaning – Profesjonalne sprzątanie</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {margin:0;font-family:Poppins,sans-serif;color:#333;line-height:1.6;}
+    header {
+      min-height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:40px;
+      background:linear-gradient(rgba(34,197,94,.7),rgba(14,165,233,.7)),url('https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?auto=format&fit=crop&w=1600&q=80');
+      background-size:cover;
+      background-position:center;
+      color:white;
+    }
+    header h1 {font-size:3rem;margin-bottom:10px;}
+    header p {font-size:1.5rem;margin-bottom:20px;}
+    header a.phone {font-size:1.5rem;background:#22c55e;color:white;padding:12px 24px;border-radius:999px;text-decoration:none;}
+
+    section {padding:60px 20px;max-width:1000px;margin:0 auto;}
+    .services h2, .contact h2 {text-align:center;margin-bottom:40px;}
+    .service-grid {display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
+    .service {flex:1 1 250px;background:#f3f4f6;padding:30px;border-radius:12px;transition:transform .3s;}
+    .service:hover {transform:translateY(-10px);}
+    .service h3 {margin-top:10px;}
+
+    .contact {background:#f9fafb;border-radius:12px;}
+    .contact form {display:flex;flex-direction:column;gap:15px;max-width:500px;margin:0 auto;}
+    .contact input, .contact textarea {padding:12px;border-radius:8px;border:1px solid #cbd5e1;width:100%;}
+    .contact button {background:#22c55e;color:white;padding:14px;border:none;border-radius:999px;font-weight:600;font-size:1rem;cursor:pointer;}
+    .contact button:hover {background:#16a34a;}
+
+    footer {text-align:center;padding:30px;background:#e5e7eb;}
+  </style>
 </head>
 <body>
 
@@ -19,9 +51,9 @@
 <section class="services">
   <h2>Nasze usługi</h2>
   <div class="service-grid">
-    <div class="service">🏠 <h3>Sprzątanie mieszkań</h3></div>
-    <div class="service">🏢 <h3>Sprzątanie biur</h3></div>
-    <div class="service">🧹 <h3>Sprzątanie po remoncie</h3></div>
+    <div class="service">🏠<h3>Sprzątanie mieszkań</h3></div>
+    <div class="service">🏢<h3>Sprzątanie biur</h3></div>
+    <div class="service">🧹<h3>Sprzątanie po remoncie</h3></div>
   </div>
 </section>
 
@@ -32,8 +64,8 @@
   <p><strong>Telefon:</strong> 533 858 447</p>
 
   <form action="mailto:justjustcleaning@gmail.com" method="POST" enctype="text/plain">
-    <input type="text" name="Imię" placeholder="Twoje imię" required />
-    <input type="email" name="Email" placeholder="Twój email" required />
+    <input type="text" name="Imię" placeholder="Twoje imię" required>
+    <input type="email" name="Email" placeholder="Twój email" required>
     <textarea name="Wiadomość" placeholder="Twoja wiadomość" required></textarea>
     <button type="submit">Wyślij wiadomość</button>
   </form>
