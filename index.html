@@ -24,7 +24,7 @@
     nav a{margin-left:20px;color:var(--muted);font-weight:500}
     nav a:hover{color:var(--primary)}
 
-    header{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px;background:radial-gradient(circle at top,#22c55e,#0ea5e9)}
+    header{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px;background:linear-gradient(rgba(34,197,94,.7),rgba(14,165,233,.7)),url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center}
     header h1{font-size:3.4rem;color:white;margin-bottom:14px}
     header p{font-size:1.3rem;color:#e0f2fe;max-width:700px;margin:auto}
     .cta{margin-top:40px;display:inline-block;background:white;color:var(--dark);padding:16px 38px;border-radius:999px;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,.15)}
@@ -74,15 +74,15 @@
   <h2>Nasze usługi</h2>
   <div class="grid">
     <div class="card">
-      <h3>Sprzątanie mieszkań</h3>
+      <h3>🏠 Sprzątanie mieszkań</h3>
       <p>Dokładne, regularne lub jednorazowe sprzątanie mieszkań i domów.</p>
     </div>
     <div class="card">
-      <h3>Sprzątanie biur</h3>
+      <h3>🏢 Sprzątanie biur</h3>
       <p>Czyste i świeże biura, elastyczne godziny i pełna dyskrecja.</p>
     </div>
     <div class="card">
-      <h3>Sprzątanie po remoncie</h3>
+      <h3>🧹 Sprzątanie po remoncie</h3>
       <p>Usuwanie kurzu, pyłu i zabrudzeń po pracach remontowych.</p>
     </div>
   </div>
@@ -109,9 +109,20 @@
 <section id="contact">
   <h2>Kontakt</h2>
   <div class="contact-box">
-    <p>📞 <strong>533 858 447</strong></p>
+    <p><strong>Justyna – kontakt</strong></p>
+    <p style="font-size:1.5rem;">📞 <strong>533 858 447</strong></p>
     <p>📧 justynaniczaj@wp.pl</p>
     <p>📍 Goleniów i okolice</p>
+
+    <form style="margin-top:30px;text-align:left">
+      <label>Imię</label><br>
+      <input type="text" placeholder="Twoje imię" style="width:100%;padding:12px;margin-bottom:14px;border-radius:8px;border:1px solid #cbd5e1"><br>
+      <label>Email</label><br>
+      <input type="email" placeholder="Twój email" style="width:100%;padding:12px;margin-bottom:14px;border-radius:8px;border:1px solid #cbd5e1"><br>
+      <label>Wiadomość</label><br>
+      <textarea placeholder="Napisz do Justyny" style="width:100%;padding:12px;height:120px;border-radius:8px;border:1px solid #cbd5e1"></textarea>
+      <button type="submit" style="margin-top:20px;width:100%;background:#22c55e;color:white;border:none;padding:14px;border-radius:999px;font-size:1rem;font-weight:600">Wyślij wiadomość</button>
+    </form>
   </div>
 </section>
 
