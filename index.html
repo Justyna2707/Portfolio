@@ -8,6 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Pacifico&display=swap" rel="stylesheet">
 
 <style>
+html { scroll-behavior: smooth; }
+
 body {
   margin:0;
   font-family:'Roboto', sans-serif;
@@ -93,7 +95,7 @@ h2 {
 .visual {
   margin:80px auto;
   max-width:1000px;
-  height:380px;
+  height:400px;
   border-radius:40px;
   background:
     linear-gradient(120deg,#ffffffcc,#ffffff33),
@@ -111,7 +113,7 @@ h2 {
 }
 
 .visual h3 {
-  font-size:2.4rem;
+  font-size:2.5rem;
   font-weight:900;
   color:#1976d2;
   text-align:center;
@@ -141,20 +143,13 @@ h2 {
 }
 
 .contact a {
-  display:inline-block;
-  margin:15px;
-  padding:18px 40px;
-  border-radius:50px;
-  background:linear-gradient(90deg,#ff6ec7,#ffb347);
   color:white;
-  font-weight:900;
   text-decoration:none;
-  font-size:1.2rem;
-  box-shadow:0 8px 25px rgba(0,0,0,0.4);
-  transition:.3s;
+  font-weight:900;
+  font-size:1.3rem;
 }
-.contact a:hover {transform:scale(1.1);}
 
+/* STOPKA */
 footer {
   text-align:center;
   padding:30px;
@@ -166,7 +161,7 @@ footer {
 @media(max-width:600px){
   header h1 {font-size:2.7rem;}
   header p {font-size:1.3rem;}
-  .visual {height:240px;}
+  .visual {height:260px;}
 }
 </style>
 </head>
@@ -176,7 +171,7 @@ footer {
 <header>
   <h1>JustCleaning</h1>
   <p>Profesjonalne sprzątanie w Goleniowie</p>
-  <a href="tel:533858447">📞 Zadzwoń teraz</a>
+  <a href="#kontakt">📞 Zadzwoń teraz</a>
 </header>
 
 <section>
@@ -190,26 +185,23 @@ footer {
 </section>
 
 <div class="visual">
-  <h3>✨ Czystość, której możesz zaufać ✨</h3>
+  <h3>✨ Czystość, którą widać od razu ✨</h3>
 </div>
 
 <section class="about">
   <h2>O nas</h2>
   <p>
     JustCleaning to lokalna firma z Goleniowa.
-    Pracujemy dokładnie, uczciwie i zawsze na czas.
+    Stawiamy na dokładność, uczciwość i zadowolenie klienta.
   </p>
 </section>
 
-<section class="contact">
-  <h2>Kontakt</h2>
-  <p style="font-size:1.3rem;font-weight:900;">
-    📞 533 858 447<br>
-    ✉️ justjustcleaning@gmail.com
+<section class="contact" id="kontakt">
+  <h2>Kontakt – Justyna</h2>
+  <p>
+    📞 <a href="tel:533858447">533 858 447</a><br><br>
+    ✉️ <a href="mailto:justjustcleaning@gmail.com">justjustcleaning@gmail.com</a>
   </p>
-
-  <a href="tel:533858447">Zadzwoń teraz</a>
-  <a href="mailto:justjustcleaning@gmail.com">Napisz email</a>
 </section>
 
 <footer>
