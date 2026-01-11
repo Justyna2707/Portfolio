@@ -1,78 +1,93 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JustCleaning – Profesjonalne sprzątanie</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
-  <style>
-    body {margin:0;font-family:'Roboto', sans-serif;color:#333;line-height:1.6;background:#fff;}
-    header {
-      min-height:80vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      padding:40px;
-      background:linear-gradient(rgba(255,192,203,0.5), rgba(0,123,255,0.5)), url('/mnt/data/A_Polish-language_webpage_for_a_cleaning_service_c.png');
-      background-size:cover;
-      background-position:center;
-      color:white;
-    }
-    header h1 {font-family:'Pacifico', cursive;font-size:3.5rem;margin-bottom:10px;color:#ffeb3b;text-shadow:2px 2px 6px rgba(0,0,0,0.6);}
-    header p {font-size:1.6rem;margin-bottom:20px;color:#ffffff;text-shadow:2px 2px 5px rgba(0,0,0,0.6);}
-    header a.phone {
-      font-size:1.6rem;
-      background:linear-gradient(90deg, #ff9800, #ff5722);
-      color:white;
-      padding:16px 32px;
-      border-radius:999px;
-      text-decoration:none;
-      transition:all 0.3s;
-      box-shadow:0 5px 15px rgba(0,0,0,0.3);
-    }
-    header a.phone:hover {
-      background:linear-gradient(90deg, #ff5722, #ff9800);
-      transform:scale(1.1);
-      box-shadow:0 8px 20px rgba(0,0,0,0.5);
-    }
-    section {padding:60px 20px;max-width:1000px;margin:0 auto;}
-    .intro {text-align:center;margin-bottom:50px;}
-    .intro h2 {font-size:2.8rem;margin-bottom:15px;color:#007bff;}
-    .intro p {font-size:1.3rem;color:#555;}
-    .services h2 {text-align:center;margin-bottom:40px;color:#ff4081;}
-    .service-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;justify-items:center;}
-    .service {background:linear-gradient(135deg, #e3f2fd, #bbdefb);padding:30px;border-radius:20px;transition:transform .3s, box-shadow .3s;box-shadow:0 4px 12px rgba(0,0,0,0.1);text-align:center;}
-    .service:hover {transform:translateY(-10px);box-shadow:0 12px 28px rgba(0,0,0,0.25);}
-    .service h3 {margin-top:10px;color:#ff5722;}
-    .service p {color:#333;}
-    .middle-image {text-align:center;margin:50px 0;}
-    .middle-image img {max-width:100%;border-radius:20px;box-shadow:0 12px 30px rgba(0,0,0,0.3);}
-    .about {background:linear-gradient(135deg, #e8f5e9, #c8e6c9);border-radius:20px;padding:50px;text-align:center;margin-bottom:50px;}
-    .about h2 {margin-bottom:20px;color:#43a047;}
-    .about p {max-width:700px;margin:0 auto;color:#444;font-size:1.2rem;}
-    .contact {background:linear-gradient(135deg, #2196f3, #64b5f6);color:white;border-radius:20px;padding:50px;}
-    .contact h2 {text-align:center;margin-bottom:30px;color:#fff;}
-    .contact p, .contact label {margin:10px 0;font-weight:700;}
-    .contact form {display:flex;flex-direction:column;gap:15px;max-width:500px;margin:0 auto;}
-    .contact input, .contact textarea {padding:14px;border-radius:10px;border:none;width:100%;background:white;color:#333;font-size:1rem;}
-    .contact button {background:linear-gradient(90deg, #ffeb3b, #ffc107);color:#333;padding:16px;border:none;border-radius:999px;font-weight:700;font-size:1.1rem;cursor:pointer;transition:all 0.3s;box-shadow:0 5px 15px rgba(0,0,0,0.3);}
-    .contact button:hover {background:linear-gradient(90deg, #ffc107, #ffeb3b);transform:scale(1.1);box-shadow:0 8px 25px rgba(0,0,0,0.5);}
-    footer {text-align:center;padding:30px;background:#f1f8e9;color:#555;font-weight:800;font-size:1.05rem;}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JustCleaning – Profesjonalne sprzątanie</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+body {margin:0;font-family:'Roboto', sans-serif;color:#333;line-height:1.6;background:#fff;}
+
+/* Nagłówek - hero */
+header {
+  min-height:80vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:40px;
+  background:url('/mnt/data/A_Polish-language_webpage_for_a_cleaning_service_c.png') no-repeat center center/cover;
+  color:white;
+}
+header h1 {font-family:'Pacifico', cursive;font-size:3.8rem;margin-bottom:15px;color:#ffeb3b;text-shadow:2px 2px 6px rgba(0,0,0,0.6);}
+header p {font-size:1.7rem;margin-bottom:25px;color:#fff;text-shadow:2px 2px 6px rgba(0,0,0,0.6);}
+header a.phone {
+  font-size:1.7rem;
+  background:linear-gradient(90deg,#ff9800,#ff5722);
+  color:white;
+  padding:18px 36px;
+  border-radius:999px;
+  text-decoration:none;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+  transition:all 0.3s;
+}
+header a.phone:hover {
+  background:linear-gradient(90deg,#ff5722,#ff9800);
+  transform:scale(1.1);
+  box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+section {padding:60px 20px;max-width:1000px;margin:0 auto;}
+.intro {text-align:center;margin-bottom:50px;}
+.intro h2 {font-size:3rem;margin-bottom:15px;color:#007bff;}
+.intro p {font-size:1.4rem;color:#555;}
+
+.services h2 {text-align:center;margin-bottom:40px;color:#ff4081;}
+.service-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;justify-items:center;}
+.service {
+  background:linear-gradient(135deg,#e3f2fd,#bbdefb);
+  padding:30px;
+  border-radius:20px;
+  transition:transform .3s, box-shadow .3s;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  text-align:center;
+}
+.service:hover {transform:translateY(-10px);box-shadow:0 12px 28px rgba(0,0,0,0.25);}
+.service h3 {margin-top:10px;color:#ff5722;}
+.service p {color:#333;}
+
+.middle-image {text-align:center;margin:50px 0;}
+.middle-image img {max-width:100%;border-radius:20px;box-shadow:0 12px 30px rgba(0,0,0,0.3);}
+
+.about {background:linear-gradient(135deg,#e8f5e9,#c8e6c9);border-radius:20px;padding:50px;text-align:center;margin-bottom:50px;}
+.about h2 {margin-bottom:20px;color:#43a047;}
+.about p {max-width:700px;margin:0 auto;color:#444;font-size:1.25rem;}
+
+.contact {background:linear-gradient(135deg,#2196f3,#64b5f6);color:white;border-radius:20px;padding:50px;}
+.contact h2 {text-align:center;margin-bottom:30px;color:#fff;}
+.contact p, .contact label {margin:10px 0;font-weight:700;}
+.contact form {display:flex;flex-direction:column;gap:15px;max-width:500px;margin:0 auto;}
+.contact input, .contact textarea {padding:14px;border-radius:10px;border:none;width:100%;background:white;color:#333;font-size:1rem;}
+.contact button {background:linear-gradient(90deg,#ffeb3b,#ffc107);color:#333;padding:16px;border:none;border-radius:999px;font-weight:700;font-size:1.15rem;cursor:pointer;transition:all 0.3s;box-shadow:0 5px 15px rgba(0,0,0,0.3);}
+.contact button:hover {background:linear-gradient(90deg,#ffc107,#ffeb3b);transform:scale(1.1);box-shadow:0 8px 25px rgba(0,0,0,0.5);}
+
+footer {text-align:center;padding:30px;background:#f1f8e9;color:#555;font-weight:800;font-size:1.1rem;}
+</style>
 </head>
 <body>
+
 <header>
-  <div class="hero">
-    <h1>JustCleaning</h1>
-    <p>Profesjonalne i szybkie usługi sprzątające w Goleniowie</p>
-    <a class="phone" href="tel:533858447">📞 533 858 447</a>
-  </div>
+  <h1>JustCleaning</h1>
+  <p>Profesjonalne i szybkie usługi sprzątające w Goleniowie</p>
+  <a class="phone" href="tel:533858447">📞 533 858 447</a>
 </header>
+
 <section class="intro">
   <h2>Dlaczego warto wybrać JustCleaning?</h2>
   <p>Nasza firma łączy doświadczenie, pasję do czystości oraz indywidualne podejście do każdego klienta. Sprawiamy, że Twój dom lub biuro lśni jak nowe!</p>
 </section>
+
 <section class="services">
   <h2>Nasze usługi</h2>
   <div class="service-grid">
@@ -82,13 +97,16 @@
     <div class="service">🧽<h3>Mycie okien</h3><p>Dokładne i bezsmugowe mycie okien – czyste szyby bez zacieków i zabrudzeń.</p></div>
   </div>
 </section>
+
 <div class="middle-image">
   <img src="/mnt/data/A_Polish-language_webpage_for_a_cleaning_service_c.png" alt="Profesjonalna sprzątaczka JustCleaning">
 </div>
+
 <section class="about">
   <h2>O nas</h2>
   <p>JustCleaning to firma rodzinna z siedzibą w Goleniowie, oferująca kompleksowe usługi sprzątające. Naszym celem jest zapewnienie czystości i komfortu w każdym wnętrzu, z pełnym szacunkiem dla Twojego czasu i przestrzeni.</p>
 </section>
+
 <section class="contact">
   <h2>Justyna – Kontakt</h2>
   <p><strong>Email:</strong> justjustcleaning@gmail.com</p>
@@ -100,8 +118,10 @@
     <button type="submit">Wyślij wiadomość</button>
   </form>
 </section>
+
 <footer>
   <p>© 2026 JustCleaning – Goleniów</p>
 </footer>
+
 </body>
 </html>
