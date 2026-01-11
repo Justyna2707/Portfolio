@@ -4,95 +4,218 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JustCleaning – Profesjonalne sprzątanie</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Pacifico&display=swap" rel="stylesheet">
-<style>
-body {margin:0;font-family:'Roboto', sans-serif;color:#333;line-height:1.6;background:#f9f9f9;}
 
-/* Hero */
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:'Roboto', sans-serif;
+  background: linear-gradient(180deg,#fdfbfb,#ebedee);
+  color:#333;
+}
+
+/* HERO */
 header {
-  min-height:80vh;
+  min-height:90vh;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   text-align:center;
   padding:40px;
-  background: url('https://images.unsplash.com/photo-1581579189204-34c2447f2c9d?crop=entropy&cs=tinysrgb&fit=max&w=1080') no-repeat center center/cover;
+  background:
+    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    url("https://images.pexels.com/photos/4107120/pexels-photo-4107120.jpeg");
+  background-size:cover;
+  background-position:center;
   color:white;
 }
-header h1 {font-family:'Pacifico', cursive;font-size:4rem;margin-bottom:15px;color:#ffeb3b;text-shadow:2px 2px 6px rgba(0,0,0,0.6);font-weight:900;}
-header p {font-size:2rem;margin-bottom:25px;color:#fff;text-shadow:2px 2px 6px rgba(0,0,0,0.6);font-weight:700;}
-header a.button {font-size:1.8rem;background:linear-gradient(90deg,#ff6ec7,#ffb347);color:white;padding:18px 36px;border-radius:999px;text-decoration:none;box-shadow:0 5px 15px rgba(0,0,0,0.3);transition:all 0.3s;font-weight:700;}
-header a.button:hover {transform:scale(1.1);box-shadow:0 8px 20px rgba(0,0,0,0.5);}
 
-section {padding:60px 20px;max-width:1200px;margin:0 auto;}
-section h2 {text-align:center;margin-bottom:40px;font-weight:900;font-size:2.5rem;}
-section p {font-weight:700;font-size:1.2rem;color:#555;}
+header h1 {
+  font-family:'Pacifico', cursive;
+  font-size:4rem;
+  color:#ffeb3b;
+  text-shadow:3px 3px 8px rgba(0,0,0,0.7);
+}
 
-.service-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;justify-items:center;}
-.service {background:linear-gradient(135deg,#ffffff,#f0f0f0);padding:30px;border-radius:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);transition:transform .3s;}
+header p {
+  font-size:1.8rem;
+  font-weight:700;
+  margin-bottom:30px;
+}
+
+header a {
+  background:linear-gradient(90deg,#ff6ec7,#ffb347);
+  padding:18px 40px;
+  border-radius:50px;
+  color:white;
+  text-decoration:none;
+  font-size:1.4rem;
+  font-weight:900;
+  box-shadow:0 8px 25px rgba(0,0,0,0.4);
+  transition:.3s;
+}
+header a:hover {transform:scale(1.1);}
+
+/* SEKCJE */
+section {
+  max-width:1200px;
+  margin:auto;
+  padding:70px 20px;
+}
+
+h2 {
+  text-align:center;
+  font-size:2.6rem;
+  font-weight:900;
+  margin-bottom:40px;
+}
+
+/* USŁUGI */
+.service-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.service {
+  background:white;
+  padding:35px;
+  border-radius:25px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  transition:.3s;
+}
 .service:hover {transform:translateY(-10px);}
-.service h3 {color:#ff4081;margin-top:15px;font-weight:900;}
-.service p {color:#555;}
+.service h3 {color:#ff4081;font-weight:900;}
+.service p {font-weight:700;color:#555;}
 
-.middle-image {text-align:center;margin:60px 0;}
-.middle-image img {max-width:80%;border-radius:20px;box-shadow:0 12px 30px rgba(0,0,0,0.3);}
+/* ZDJĘCIE ŚRODEK */
+.middle-image {
+  display:flex;
+  justify-content:center;
+  margin:80px 0;
+}
+.middle-image img {
+  width:90%;
+  max-width:900px;
+  border-radius:30px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.35);
+}
 
-.about {background:linear-gradient(135deg,#e8f5e9,#c8e6c9);border-radius:20px;padding:50px;text-align:center;margin-bottom:50px;}
-.about h2 {margin-bottom:20px;color:#43a047;font-weight:900;}
-.about p {max-width:800px;margin:0 auto;font-size:1.3rem;color:#444;}
+/* O NAS */
+.about {
+  background:linear-gradient(135deg,#e8f5e9,#c8e6c9);
+  border-radius:30px;
+  padding:60px;
+  text-align:center;
+}
+.about p {
+  max-width:800px;
+  margin:auto;
+  font-size:1.3rem;
+  font-weight:700;
+}
 
-.contact {background:linear-gradient(135deg,#2196f3,#64b5f6);color:white;border-radius:20px;padding:50px;margin-bottom:50px;}
-.contact h2 {text-align:center;margin-bottom:30px;color:#fff;font-weight:900;}
-.contact p, .contact label {margin:10px 0;font-weight:700;font-size:1.2rem;}
-.contact form {display:flex;flex-direction:column;gap:15px;max-width:500px;margin:0 auto;}
-.contact input, .contact textarea {padding:14px;border-radius:10px;border:none;width:100%;background:white;color:#333;font-size:1rem;}
-.contact button {background:linear-gradient(90deg,#ff6ec7,#ffb347);color:#fff;padding:18px;border:none;border-radius:999px;font-weight:900;font-size:1.2rem;cursor:pointer;transition:all 0.3s;box-shadow:0 5px 15px rgba(0,0,0,0.3);}
-.contact button:hover {transform:scale(1.1);box-shadow:0 8px 25px rgba(0,0,0,0.5);}
-footer {text-align:center;padding:30px;background:#f1f8e9;color:#555;font-weight:900;font-size:1.2rem;}
+/* KONTAKT */
+.contact {
+  background:linear-gradient(135deg,#2196f3,#64b5f6);
+  color:white;
+  border-radius:30px;
+  padding:60px;
+}
+
+.contact form {
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.contact input,
+.contact textarea {
+  padding:15px;
+  border-radius:12px;
+  border:none;
+  font-size:1rem;
+}
+
+.contact button {
+  background:linear-gradient(90deg,#ff6ec7,#ffb347);
+  border:none;
+  padding:18px;
+  border-radius:50px;
+  font-size:1.2rem;
+  font-weight:900;
+  cursor:pointer;
+  color:white;
+  box-shadow:0 8px 25px rgba(0,0,0,0.4);
+}
+
+footer {
+  text-align:center;
+  padding:30px;
+  font-weight:900;
+  background:#f1f8e9;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  header h1 {font-size:2.7rem;}
+  header p {font-size:1.3rem;}
+}
 </style>
 </head>
+
 <body>
 
 <header>
   <h1>JustCleaning</h1>
-  <p>Profesjonalne i szybkie usługi sprzątające w Goleniowie</p>
-  <a class="button" href="tel:533858447">Skontaktuj się z nami</a>
+  <p>Profesjonalne sprzątanie w Goleniowie</p>
+  <a href="tel:533858447">📞 Zadzwoń teraz</a>
 </header>
 
-<section class="services">
+<section>
   <h2>Nasze Usługi</h2>
   <div class="service-grid">
-    <div class="service">🏠<h3>Sprzątanie domów</h3><p>Kompleksowe sprzątanie mieszkań i domów – zawsze dokładnie i starannie.</p></div>
-    <div class="service">🏢<h3>Sprzątanie biur</h3><p>Profesjonalne sprzątanie biur i pomieszczeń firmowych – codziennie czysto i schludnie.</p></div>
-    <div class="service">🧹<h3>Sprzątanie po remontach</h3><p>Usuwamy kurz i gruz po remontach – pozostawiamy wnętrze gotowe do użytku.</p></div>
-    <div class="service">🧽<h3>Mycie okien</h3><p>Dokładne i bezsmugowe mycie okien – czyste szyby bez zacieków i zabrudzeń.</p></div>
+    <div class="service">🏠<h3>Domy i mieszkania</h3><p>Dokładnie, szybko i bez stresu.</p></div>
+    <div class="service">🏢<h3>Biura</h3><p>Czystość, która robi wrażenie.</p></div>
+    <div class="service">🧹<h3>Po remontach</h3><p>Zero kurzu, pełna gotowość.</p></div>
+    <div class="service">🪟<h3>Mycie okien</h3><p>Bez smug, perfekcyjnie.</p></div>
   </div>
 </section>
 
 <div class="middle-image">
-  <img src="https://images.unsplash.com/photo-1601582587072-43c4debe0f3f?crop=entropy&cs=tinysrgb&fit=max&w=1080" alt="Profesjonalna sprzątaczka JustCleaning">
+  <img src="https://images.pexels.com/photos/4239146/pexels-photo-4239146.jpeg" alt="Profesjonalne sprzątanie">
 </div>
 
 <section class="about">
   <h2>O nas</h2>
-  <p>JustCleaning to firma rodzinna z siedzibą w Goleniowie, oferująca kompleksowe usługi sprzątające. Naszym celem jest zapewnienie czystości i komfortu w każdym wnętrzu, z pełnym szacunkiem dla Twojego czasu i przestrzeni.</p>
+  <p>
+    JustCleaning to lokalna firma z Goleniowa.
+    Stawiamy na jakość, dokładność i zadowolenie klienta.
+  </p>
 </section>
 
 <section class="contact">
-  <h2>Justyna – Kontakt</h2>
-  <p><strong>Email:</strong> justjustcleaning@gmail.com</p>
-  <p><strong>Telefon:</strong> 533 858 447</p>
-  <form action="mailto:justjustcleaning@gmail.com" method="POST" enctype="text/plain">
-    <input type="text" name="Imię" placeholder="Twoje imię" required>
-    <input type="email" name="Email" placeholder="Twój email" required>
-    <textarea name="Wiadomość" placeholder="Twoja wiadomość" required></textarea>
-    <button type="submit">Wyślij wiadomość</button>
+  <h2>Kontakt – Justyna</h2>
+  <p style="text-align:center;font-weight:900;">
+    📞 533 858 447<br>
+    ✉️ justjustcleaning@gmail.com
+  </p>
+
+  <form>
+    <input type="text" placeholder="Twoje imię" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Wiadomość" required></textarea>
+    <button type="button" onclick="alert('Zadzwoń lub napisz email 😊')">Wyślij</button>
   </form>
 </section>
 
 <footer>
-  <p>© 2026 JustCleaning – Goleniów</p>
+  © 2026 JustCleaning – Goleniów
 </footer>
 
 </body>
