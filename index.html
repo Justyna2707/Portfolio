@@ -5,35 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JustCleaning – Profesjonalne sprzątanie</title>
   <style>
-    body {margin:0;font-family:Poppins,sans-serif;color:#333;line-height:1.6;}
+    body {margin:0;font-family:Poppins,sans-serif;color:#333;line-height:1.6;background:#fefefe;}
     header {
-      min-height:90vh;
+      min-height:80vh;
       display:flex;
       align-items:center;
       justify-content:center;
       text-align:center;
       padding:40px;
-      background:linear-gradient(rgba(34,197,94,.7),rgba(14,165,233,.7)),url('https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?auto=format&fit=crop&w=1600&q=80');
+      background:linear-gradient(rgba(34,197,94,.6),rgba(14,165,233,.6)), url('/mnt/data/A_website_for_"JustCleaning"_features_a_hero_secti.png');
       background-size:cover;
       background-position:center;
       color:white;
     }
     header h1 {font-size:3rem;margin-bottom:10px;}
     header p {font-size:1.5rem;margin-bottom:20px;}
-    header a.phone {font-size:1.5rem;background:#22c55e;color:white;padding:12px 24px;border-radius:999px;text-decoration:none;}
+    header a.phone {font-size:1.5rem;background:#22c55e;color:white;padding:14px 28px;border-radius:999px;text-decoration:none;transition:all 0.3s;}
+    header a.phone:hover {background:#16a34a;transform:scale(1.05);}
 
     section {padding:60px 20px;max-width:1000px;margin:0 auto;}
-    .services h2, .contact h2 {text-align:center;margin-bottom:40px;}
-    .service-grid {display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
-    .service {flex:1 1 250px;background:#f3f4f6;padding:30px;border-radius:12px;transition:transform .3s;}
-    .service:hover {transform:translateY(-10px);}
-    .service h3 {margin-top:10px;}
+    .intro {text-align:center;margin-bottom:50px;}
+    .intro h2 {font-size:2.5rem;margin-bottom:15px;}
+    .intro p {font-size:1.2rem;color:#555;}
 
-    .contact {background:#f9fafb;border-radius:12px;}
+    .services h2 {text-align:center;margin-bottom:40px;}
+    .service-grid {display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
+    .service {flex:1 1 250px;background:#f3f4f6;padding:30px;border-radius:16px;transition:transform .3s, box-shadow .3s;box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+    .service:hover {transform:translateY(-8px);box-shadow:0 8px 20px rgba(0,0,0,0.15);}
+    .service h3 {margin-top:10px;color:#111;}
+
+    .about {background:#f0fdf4;border-radius:16px;padding:40px;text-align:center;margin-bottom:50px;}
+    .about h2 {margin-bottom:20px;}
+    .about p {max-width:700px;margin:0 auto;color:#444;}
+
+    .contact {background:#f9fafb;border-radius:16px;padding:40px;}
+    .contact h2 {text-align:center;margin-bottom:30px;}
+    .contact p {margin:10px 0;}
     .contact form {display:flex;flex-direction:column;gap:15px;max-width:500px;margin:0 auto;}
     .contact input, .contact textarea {padding:12px;border-radius:8px;border:1px solid #cbd5e1;width:100%;}
-    .contact button {background:#22c55e;color:white;padding:14px;border:none;border-radius:999px;font-weight:600;font-size:1rem;cursor:pointer;}
-    .contact button:hover {background:#16a34a;}
+    .contact button {background:#22c55e;color:white;padding:14px;border:none;border-radius:999px;font-weight:600;font-size:1rem;cursor:pointer;transition:all 0.3s;}
+    .contact button:hover {background:#16a34a;transform:scale(1.05);}
 
     footer {text-align:center;padding:30px;background:#e5e7eb;}
   </style>
@@ -43,18 +54,31 @@
 <header>
   <div class="hero">
     <h1>JustCleaning</h1>
-    <p>Profesjonalne usługi sprzątające – Goleniów</p>
+    <p>Profesjonalne i szybkie usługi sprzątające w Goleniowie</p>
     <a class="phone" href="tel:533858447">📞 533 858 447</a>
   </div>
 </header>
 
+<section class="intro">
+  <h2>Dlaczego warto wybrać JustCleaning?</h2>
+  <p>Nasza firma łączy doświadczenie, pasję do czystości oraz indywidualne podejście do każdego klienta. Sprawiamy, że Twój dom lub biuro lśni jak nowe!</p>
+</section>
+
 <section class="services">
   <h2>Nasze usługi</h2>
   <div class="service-grid">
-    <div class="service">🏠<h3>Sprzątanie mieszkań</h3></div>
-    <div class="service">🏢<h3>Sprzątanie biur</h3></div>
-    <div class="service">🧹<h3>Sprzątanie po remoncie</h3></div>
+    <div class="service">🏠<h3>Sprzątanie mieszkań</h3><p>Regularne sprzątanie, mycie podłóg, odkurzanie i utrzymanie czystości w Twoim domu.</p></div>
+    <div class="service">🏢<h3>Sprzątanie biur</h3><p>Czyste biuro to lepsza atmosfera pracy. Oferujemy kompleksowe sprzątanie biur i przestrzeni firmowych.</p></div>
+    <div class="service">🧹<h3>Sprzątanie po remoncie</h3><p>Usuwamy kurz, pył i resztki materiałów budowlanych, zostawiając wnętrze gotowe do użytku.</p></div>
+    <div class="service">🧽<h3>Czyszczenie okien</h3><p>Perfekcyjnie czyste okna w domu i biurze, bez smug i zacieków.</p></div>
+    <div class="service">🛋️<h3>Pranie tapicerki</h3><p>Skuteczne usuwanie zabrudzeń z kanap, foteli i mebli tapicerowanych.</p></div>
+    <div class="service">🧺<h3>Pranie dywanów</h3><p>Profesjonalne czyszczenie dywanów, wykładzin i chodników, przywracające świeżość i kolor.</p></div>
   </div>
+</section>
+
+<section class="about">
+  <h2>O nas</h2>
+  <p>JustCleaning to firma rodzinna z siedzibą w Goleniowie, która od lat oferuje kompleksowe usługi sprzątające. Naszym celem jest zapewnienie czystości i komfortu w każdym wnętrzu, z pełnym szacunkiem dla Twojego czasu i przestrzeni.</p>
 </section>
 
 <section class="contact">
