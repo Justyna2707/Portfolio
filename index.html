@@ -11,7 +11,7 @@
 body {
   margin:0;
   font-family:'Roboto', sans-serif;
-  background: linear-gradient(180deg,#fdfbfb,#ebedee);
+  background: linear-gradient(180deg,#fdfbfb,#e8f0f7);
   color:#333;
 }
 
@@ -25,10 +25,8 @@ header {
   text-align:center;
   padding:40px;
   background:
-    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
-    url("https://images.pexels.com/photos/4107120/pexels-photo-4107120.jpeg");
-  background-size:cover;
-  background-position:center;
+    radial-gradient(circle at top, #ffffff33, transparent 60%),
+    linear-gradient(135deg,#2196f3,#64b5f6);
   color:white;
 }
 
@@ -36,11 +34,11 @@ header h1 {
   font-family:'Pacifico', cursive;
   font-size:4rem;
   color:#ffeb3b;
-  text-shadow:3px 3px 8px rgba(0,0,0,0.7);
+  text-shadow:3px 3px 8px rgba(0,0,0,0.6);
 }
 
 header p {
-  font-size:1.8rem;
+  font-size:1.7rem;
   font-weight:700;
   margin-bottom:30px;
 }
@@ -91,17 +89,32 @@ h2 {
 .service h3 {color:#ff4081;font-weight:900;}
 .service p {font-weight:700;color:#555;}
 
-/* ZDJĘCIE ŚRODEK */
-.middle-image {
+/* BLOK WIZUALNY */
+.visual {
+  margin:80px auto;
+  max-width:1000px;
+  height:380px;
+  border-radius:40px;
+  background:
+    linear-gradient(120deg,#ffffffcc,#ffffff33),
+    repeating-linear-gradient(
+      45deg,
+      #e3f2fd,
+      #e3f2fd 20px,
+      #bbdefb 20px,
+      #bbdefb 40px
+    );
   display:flex;
+  align-items:center;
   justify-content:center;
-  margin:80px 0;
+  box-shadow:0 25px 60px rgba(0,0,0,0.35);
 }
-.middle-image img {
-  width:90%;
-  max-width:900px;
-  border-radius:30px;
-  box-shadow:0 20px 50px rgba(0,0,0,0.35);
+
+.visual h3 {
+  font-size:2.4rem;
+  font-weight:900;
+  color:#1976d2;
+  text-align:center;
 }
 
 /* O NAS */
@@ -124,35 +137,23 @@ h2 {
   color:white;
   border-radius:30px;
   padding:60px;
+  text-align:center;
 }
 
-.contact form {
-  max-width:500px;
-  margin:auto;
-  display:flex;
-  flex-direction:column;
-  gap:15px;
-}
-
-.contact input,
-.contact textarea {
-  padding:15px;
-  border-radius:12px;
-  border:none;
-  font-size:1rem;
-}
-
-.contact button {
-  background:linear-gradient(90deg,#ff6ec7,#ffb347);
-  border:none;
-  padding:18px;
+.contact a {
+  display:inline-block;
+  margin:15px;
+  padding:18px 40px;
   border-radius:50px;
-  font-size:1.2rem;
-  font-weight:900;
-  cursor:pointer;
+  background:linear-gradient(90deg,#ff6ec7,#ffb347);
   color:white;
+  font-weight:900;
+  text-decoration:none;
+  font-size:1.2rem;
   box-shadow:0 8px 25px rgba(0,0,0,0.4);
+  transition:.3s;
 }
+.contact a:hover {transform:scale(1.1);}
 
 footer {
   text-align:center;
@@ -165,6 +166,7 @@ footer {
 @media(max-width:600px){
   header h1 {font-size:2.7rem;}
   header p {font-size:1.3rem;}
+  .visual {height:240px;}
 }
 </style>
 </head>
@@ -182,36 +184,32 @@ footer {
   <div class="service-grid">
     <div class="service">🏠<h3>Domy i mieszkania</h3><p>Dokładnie, szybko i bez stresu.</p></div>
     <div class="service">🏢<h3>Biura</h3><p>Czystość, która robi wrażenie.</p></div>
-    <div class="service">🧹<h3>Po remontach</h3><p>Zero kurzu, pełna gotowość.</p></div>
-    <div class="service">🪟<h3>Mycie okien</h3><p>Bez smug, perfekcyjnie.</p></div>
+    <div class="service">🧹<h3>Po remontach</h3><p>Gotowe do zamieszkania.</p></div>
+    <div class="service">🪟<h3>Mycie okien</h3><p>Perfekcyjnie bez smug.</p></div>
   </div>
 </section>
 
-<div class="middle-image">
-  <img src="https://images.pexels.com/photos/4239146/pexels-photo-4239146.jpeg" alt="Profesjonalne sprzątanie">
+<div class="visual">
+  <h3>✨ Czystość, której możesz zaufać ✨</h3>
 </div>
 
 <section class="about">
   <h2>O nas</h2>
   <p>
     JustCleaning to lokalna firma z Goleniowa.
-    Stawiamy na jakość, dokładność i zadowolenie klienta.
+    Pracujemy dokładnie, uczciwie i zawsze na czas.
   </p>
 </section>
 
 <section class="contact">
-  <h2>Kontakt – Justyna</h2>
-  <p style="text-align:center;font-weight:900;">
+  <h2>Kontakt</h2>
+  <p style="font-size:1.3rem;font-weight:900;">
     📞 533 858 447<br>
     ✉️ justjustcleaning@gmail.com
   </p>
 
-  <form>
-    <input type="text" placeholder="Twoje imię" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Wiadomość" required></textarea>
-    <button type="button" onclick="alert('Zadzwoń lub napisz email 😊')">Wyślij</button>
-  </form>
+  <a href="tel:533858447">Zadzwoń teraz</a>
+  <a href="mailto:justjustcleaning@gmail.com">Napisz email</a>
 </section>
 
 <footer>
