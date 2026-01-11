@@ -14,52 +14,54 @@
       justify-content:center;
       text-align:center;
       padding:40px;
-      background:linear-gradient(rgba(0,123,255,.6),rgba(0,200,255,.6)), url('/mnt/data/cleaning_woman_hero.png');
+      background:linear-gradient(rgba(255,192,203,0.5), rgba(0,123,255,0.5)), url('/mnt/data/A_Polish-language_webpage_for_a_cleaning_service_c.png');
       background-size:cover;
       background-position:center;
       color:white;
     }
-    header h1 {font-family:'Pacifico', cursive;font-size:3.5rem;margin-bottom:10px;color:#ffecb3;}
-    header p {font-size:1.6rem;margin-bottom:20px;color:#ffffff; text-shadow: 1px 1px 5px rgba(0,0,0,0.5);}
-    header a.phone {font-size:1.6rem;background:#ff9800;color:white;padding:16px 32px;border-radius:999px;text-decoration:none;transition:all 0.3s;}
-    header a.phone:hover {background:#f57c00;transform:scale(1.05);}
-
+    header h1 {font-family:'Pacifico', cursive;font-size:3.5rem;margin-bottom:10px;color:#ffeb3b;text-shadow:2px 2px 6px rgba(0,0,0,0.6);}
+    header p {font-size:1.6rem;margin-bottom:20px;color:#ffffff;text-shadow:2px 2px 5px rgba(0,0,0,0.6);}
+    header a.phone {
+      font-size:1.6rem;
+      background:linear-gradient(90deg, #ff9800, #ff5722);
+      color:white;
+      padding:16px 32px;
+      border-radius:999px;
+      text-decoration:none;
+      transition:all 0.3s;
+      box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    }
+    header a.phone:hover {
+      background:linear-gradient(90deg, #ff5722, #ff9800);
+      transform:scale(1.1);
+      box-shadow:0 8px 20px rgba(0,0,0,0.5);
+    }
     section {padding:60px 20px;max-width:1000px;margin:0 auto;}
     .intro {text-align:center;margin-bottom:50px;}
     .intro h2 {font-size:2.8rem;margin-bottom:15px;color:#007bff;}
     .intro p {font-size:1.3rem;color:#555;}
-
-    .services h2 {text-align:center;margin-bottom:40px;color:#4caf50;}
+    .services h2 {text-align:center;margin-bottom:40px;color:#ff4081;}
     .service-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;justify-items:center;}
-    .service {background:#e3f2fd;padding:30px;border-radius:20px;transition:transform .3s, box-shadow .3s;box-shadow:0 4px 12px rgba(0,0,0,0.1);text-align:center;}
-    .service:hover {transform:translateY(-10px);box-shadow:0 10px 25px rgba(0,0,0,0.2);}
+    .service {background:linear-gradient(135deg, #e3f2fd, #bbdefb);padding:30px;border-radius:20px;transition:transform .3s, box-shadow .3s;box-shadow:0 4px 12px rgba(0,0,0,0.1);text-align:center;}
+    .service:hover {transform:translateY(-10px);box-shadow:0 12px 28px rgba(0,0,0,0.25);}
     .service h3 {margin-top:10px;color:#ff5722;}
     .service p {color:#333;}
-
     .middle-image {text-align:center;margin:50px 0;}
-    .middle-image img {max-width:100%;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,0.3);}
-
-    .about {background:#e8f5e9;border-radius:20px;padding:50px;text-align:center;margin-bottom:50px;}
+    .middle-image img {max-width:100%;border-radius:20px;box-shadow:0 12px 30px rgba(0,0,0,0.3);}
+    .about {background:linear-gradient(135deg, #e8f5e9, #c8e6c9);border-radius:20px;padding:50px;text-align:center;margin-bottom:50px;}
     .about h2 {margin-bottom:20px;color:#43a047;}
     .about p {max-width:700px;margin:0 auto;color:#444;font-size:1.2rem;}
-
-    .contact {background:#2196f3;color:white;border-radius:20px;padding:50px;}
+    .contact {background:linear-gradient(135deg, #2196f3, #64b5f6);color:white;border-radius:20px;padding:50px;}
     .contact h2 {text-align:center;margin-bottom:30px;color:#fff;}
-    .contact p, .contact label {margin:10px 0; font-weight:700;}
+    .contact p, .contact label {margin:10px 0;font-weight:700;}
     .contact form {display:flex;flex-direction:column;gap:15px;max-width:500px;margin:0 auto;}
     .contact input, .contact textarea {padding:14px;border-radius:10px;border:none;width:100%;background:white;color:#333;font-size:1rem;}
-    .contact button {background:#ffeb3b;color:#333;padding:16px;border:none;border-radius:999px;font-weight:700;font-size:1.1rem;cursor:pointer;transition:all 0.3s;}
-    .contact button:hover {background:#fdd835;transform:scale(1.05);}
-
-    footer {text-align:center;padding:30px;background:#f1f8e9; color:#555; font-weight:700;}
-
-    /* Animacje i hover */
-    .service, header a.phone, .contact button {transition:all 0.3s ease;}
-    .service:hover, header a.phone:hover, .contact button:hover {transform:translateY(-5px);}
+    .contact button {background:linear-gradient(90deg, #ffeb3b, #ffc107);color:#333;padding:16px;border:none;border-radius:999px;font-weight:700;font-size:1.1rem;cursor:pointer;transition:all 0.3s;box-shadow:0 5px 15px rgba(0,0,0,0.3);}
+    .contact button:hover {background:linear-gradient(90deg, #ffc107, #ffeb3b);transform:scale(1.1);box-shadow:0 8px 25px rgba(0,0,0,0.5);}
+    footer {text-align:center;padding:30px;background:#f1f8e9;color:#555;font-weight:800;font-size:1.05rem;}
   </style>
 </head>
 <body>
-
 <header>
   <div class="hero">
     <h1>JustCleaning</h1>
@@ -67,37 +69,30 @@
     <a class="phone" href="tel:533858447">📞 533 858 447</a>
   </div>
 </header>
-
 <section class="intro">
   <h2>Dlaczego warto wybrać JustCleaning?</h2>
   <p>Nasza firma łączy doświadczenie, pasję do czystości oraz indywidualne podejście do każdego klienta. Sprawiamy, że Twój dom lub biuro lśni jak nowe!</p>
 </section>
-
 <section class="services">
   <h2>Nasze usługi</h2>
   <div class="service-grid">
-    <div class="service">🏠<h3>Sprzątanie mieszkań</h3><p>Regularne sprzątanie, mycie podłóg, odkurzanie i utrzymanie czystości w Twoim domu.</p></div>
-    <div class="service">🏢<h3>Sprzątanie biur</h3><p>Czyste biuro to lepsza atmosfera pracy. Oferujemy kompleksowe sprzątanie biur i przestrzeni firmowych.</p></div>
-    <div class="service">🧹<h3>Sprzątanie po remoncie</h3><p>Usuwamy kurz, pył i resztki materiałów budowlanych, zostawiając wnętrze gotowe do użytku.</p></div>
-    <div class="service">🧽<h3>Czyszczenie okien</h3><p>Perfekcyjnie czyste okna w domu i biurze, bez smug i zacieków.</p></div>
+    <div class="service">🏠<h3>Sprzątanie domów</h3><p>Kompleksowe sprzątanie mieszkań i domów – zawsze dokładnie i starannie.</p></div>
+    <div class="service">🏢<h3>Sprzątanie biur</h3><p>Profesjonalne sprzątanie biur i pomieszczeń firmowych – codziennie czysto i schludnie.</p></div>
+    <div class="service">🧹<h3>Sprzątanie po remontach</h3><p>Usuwamy kurz i gruz po remontach – pozostawiamy wnętrze gotowe do użytku.</p></div>
+    <div class="service">🧽<h3>Mycie okien</h3><p>Dokładne i bezsmugowe mycie okien – czyste szyby bez zacieków i zabrudzeń.</p></div>
   </div>
 </section>
-
 <div class="middle-image">
-  <img src="/mnt/data/cleaning_woman_hero.png" alt="Profesjonalna sprzątaczka JustCleaning">
+  <img src="/mnt/data/A_Polish-language_webpage_for_a_cleaning_service_c.png" alt="Profesjonalna sprzątaczka JustCleaning">
 </div>
-
 <section class="about">
   <h2>O nas</h2>
-  <p>JustCleaning to firma rodzinna z siedzibą w Goleniowie, która oferuje kompleksowe usługi sprzątające. Naszym celem jest zapewnienie czystości i komfortu w każdym wnętrzu, z pełnym szacunkiem dla Twojego czasu i przestrzeni.</p>
+  <p>JustCleaning to firma rodzinna z siedzibą w Goleniowie, oferująca kompleksowe usługi sprzątające. Naszym celem jest zapewnienie czystości i komfortu w każdym wnętrzu, z pełnym szacunkiem dla Twojego czasu i przestrzeni.</p>
 </section>
-
 <section class="contact">
-  <h2>Napisz do Justyny</h2>
-  <p><strong>Justyna – kontakt</strong></p>
+  <h2>Justyna – Kontakt</h2>
   <p><strong>Email:</strong> justjustcleaning@gmail.com</p>
   <p><strong>Telefon:</strong> 533 858 447</p>
-
   <form action="mailto:justjustcleaning@gmail.com" method="POST" enctype="text/plain">
     <input type="text" name="Imię" placeholder="Twoje imię" required>
     <input type="email" name="Email" placeholder="Twój email" required>
@@ -105,10 +100,8 @@
     <button type="submit">Wyślij wiadomość</button>
   </form>
 </section>
-
 <footer>
   <p>© 2026 JustCleaning – Goleniów</p>
 </footer>
-
 </body>
 </html>
