@@ -1,107 +1,115 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<title>JustCleaning – Profesjonalne Sprzątanie</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f2f4f7;
-    color:#222;
-}
-header{
-    background:linear-gradient(135deg,#00bcd4,#4caf50);
-    padding:40px 20px;
-    text-align:center;
-    color:#fff;
-}
-header img{
-    max-width:100%;
-    border-radius:20px;
-    margin-bottom:20px;
-}
-.contact-box{
-    background:#ffffff;
-    max-width:700px;
-    margin:-30px auto 40px;
-    padding:25px;
-    text-align:center;
-    border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
-}
-.contact-box .phone{
-    font-size:28px;
-    font-weight:bold;
-}
-section{
-    max-width:1200px;
-    margin:auto;
-    padding:40px 20px;
-}
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-.card{
-    background:#fff;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 20px rgba(0,0,0,.15);
-}
-.card img{
-    width:100%;
-    display:block;
-}
-.card h3{
-    padding:20px;
-    margin:0;
-}
-footer{
-    background:#111;
-    color:#fff;
-    text-align:center;
-    padding:30px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JustCleaning – Profesjonalne Sprzątanie | Goleniów i okolice</title>
+  <meta name="description" content="JustCleaning – profesjonalne sprzątanie domów, mieszkań i biur. Goleniów i okolice. Kontakt bezpośredni: Justyna 533 858 447">
+  <style>
+    body{margin:0;font-family:'Segoe UI',Arial,sans-serif;color:#333;line-height:1.6;background:#fff}
+    header{position:sticky;top:0;z-index:100;background:#0f766e;color:#fff;padding:15px 30px;box-shadow:0 4px 10px rgba(0,0,0,.15)}
+    .top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+    .brand{font-size:26px;font-weight:700}
+    .contact-top{font-size:15px;text-align:right}
+    .hero{min-height:90vh;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:40px}
+    .hero h1{font-size:48px;margin-bottom:15px}
+    .hero p{font-size:20px;max-width:700px;margin:0 auto 30px}
+    .btn{display:inline-block;background:#0f766e;color:#fff;padding:16px 32px;border-radius:40px;text-decoration:none;font-weight:600;font-size:16px}
+    section{padding:80px 30px;max-width:1200px;margin:auto}
+    h2{text-align:center;font-size:36px;margin-bottom:20px}
+    .subtitle{text-align:center;color:#666;max-width:800px;margin:0 auto 50px}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .about img{width:100%;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.2)}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+    .card{background:#f9f9f9;border-radius:20px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.12)}
+    .card img{width:100%;height:180px;object-fit:cover}
+    .card div{padding:25px}
+    .why{background:#f1f5f4}
+    .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;text-align:center}
+    .why-item{background:#fff;padding:30px;border-radius:20px;box-shadow:0 8px 20px rgba(0,0,0,.1)}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.15)}
+    .cta{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('https://images.unsplash.com/photo-1527515637462-daf5e4d1b9a0') center/cover no-repeat;color:#fff;text-align:center;border-radius:30px;padding:80px 30px;margin-top:60px}
+    footer{background:#111;color:#ccc;text-align:center;padding:30px;margin-top:80px}
+    @media(max-width:900px){.about{grid-template-columns:1fr}.hero h1{font-size:36px}}
+  </style>
 </head>
-
 <body>
 
 <header>
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAABkCAYAAAB7d0fGAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMUlEQVR4nO3TsQ2AMAxFQd7/6a4QhQqKk0pWzqJvZkNf4GkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgH0d6p3zq9nY9c0b5vF1kXq6Z5Z4x2pZ0f3y8bV7n9Z1z6P1Pq0t5zZ0v4vJzZ6b7eZ5Z4x2pZ0f3y8bV7n9Z1z6P1Pq0t5zZ0v4vJzZ6b7eZ5Z4x2pZ0f3y8bV7n9Z1z6P1Pq0t5zZ0v4vJzZ6b7eZ5Z4x2pZ0f3y8bV7n9Z1z6P1Pq0t5zZ0v4vJzZ6b7eZ5Z4x2pZ0f3y8bV7n9Z1z6P1Pq0t5zZ0v4vJzZ6b7eZ5Z4x2pZ0f3y8bV7n9Z1z6P1Pq0t5zZ0v4vJzZ6b7eZ5Z4wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwBqz4J9n7q5KkAAAAASUVORK5CYII=">
-<h1>JustCleaning</h1>
-<p>Nowoczesna firma sprzątająca</p>
+  <div class="top">
+    <div class="brand">JustCleaning</div>
+    <div class="contact-top">
+      📞 <strong>533 858 447</strong><br>
+      ✉️ justjustcleaning@gmail.com<br>
+      👤 Bezpośredni kontakt: <strong>Justyna</strong>
+    </div>
+  </div>
 </header>
 
-<div class="contact-box">
-<div class="phone">📞 533 858 447</div>
-<p>✉ justjustcleaning@gmail.com</p>
-</div>
+<section class="hero">
+  <div>
+    <h1>Profesjonalne sprzątanie domów, mieszkań i biur</h1>
+    <p>Nowoczesna firma sprzątająca działająca na terenie Goleniowa i okolic. Dokładnie, terminowo i z pełnym zaangażowaniem.</p>
+    <a href="tel:533858447" class="btn">Zadzwoń i umów sprzątanie</a>
+  </div>
+</section>
 
 <section>
-<h2>Nasze usługi</h2>
+  <h2>O firmie JustCleaning</h2>
+  <p class="subtitle">Czystość, na której możesz polegać</p>
+  <div class="about">
+    <div>
+      <p>JustCleaning to profesjonalna firma sprzątająca prowadzona przez <strong>Justynę</strong>. Specjalizujemy się w kompleksowym sprzątaniu domów, mieszkań oraz biur.</p>
+      <p>Każde zlecenie traktujemy indywidualnie. Pracujemy na sprawdzonych środkach czystości, dbając o detale i komfort klienta.</p>
+      <p>Obsługujemy klientów prywatnych oraz firmy na terenie <strong>Goleniowa i okolic</strong>.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="sprzątanie domu">
+  </div>
+</section>
 
-<div class="services">
+<section>
+  <h2>Nasze usługi</h2>
+  <p class="subtitle">Kompleksowa oferta sprzątania</p>
+  <div class="services">
+    <div class="card"><img src="https://images.unsplash.com/photo-1595526114035-45e7339fda7f"><div><h3>Sprzątanie domów</h3><p>Regularne i jednorazowe sprzątanie domów jednorodzinnych.</p></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a"><div><h3>Sprzątanie mieszkań</h3><p>Po wynajmie, przeprowadzce lub generalne porządki.</p></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427"><div><h3>Sprzątanie biur</h3><p>Czyste i reprezentacyjne miejsce pracy.</p></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea"><div><h3>Sprzątanie po remoncie</h3><p>Usuwanie pyłu, zabrudzeń i pozostałości remontowych.</p></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1563453392212-326f5e854473"><div><h3>Mycie okien</h3><p>Okna, witryny i przeszklenia.</p></div></div>
+  </div>
+</section>
 
-<div class="card">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAABkCAYAAAB7d0fGAAAACXBIWXMAAAsTAAALEwEAmpwYAAABKUlEQVR4nO3TsQ2AMAxFQd7/6a4QhQqKk0pWzqJvZkNf4GkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgH0d6p3zq9nY9c0b5vF1kXq6Z5Z4x2pZ0f3y8bV7n9Z1z6P1Pq0t5zZ0v4vJzZ6b7eZ5Z4x2pZ0f3y8bV7n9Z1z6P1Pq0t5zZ0v4vJzZ6b7eZ5Z4x2pZ0f3y8bV7n9Z1z6P1Pq0t5zZ0v4vJzZ6b7eZ5Z4wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwBz7UJ9m8s3oEAAAAASUVORK5CYII=">
-<h3>Sprzątanie domów i mieszkań</h3>
-</div>
+<section class="why">
+  <h2>Dlaczego JustCleaning?</h2>
+  <div class="why-grid">
+    <div class="why-item">✔ Indywidualne podejście</div>
+    <div class="why-item">✔ Dokładność i rzetelność</div>
+    <div class="why-item">✔ Konkurencyjne ceny</div>
+    <div class="why-item">✔ Bezpośredni kontakt z Justyną</div>
+  </div>
+</section>
 
-<div class="card">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAABkCAYAAAB7d0fGAAAACXBIWXMAAAsTAAALEwEAmpwYAAABKUlEQVR4nO3TsQ2AMAxFQd7/6a4QhQqKk0pWzqJvZkNf4GkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgH0d6p3zq9nY9c0b5vF1kXq6Z5Z4x2pZ0f3y8bV7n9Z1z6P1Pq0t5zZ0v4vJzZ6b7eZ5Z4x2pZ0f3y8bV7n9Z1z6P1Pq0t5zZ0v4vJzZ6b7eZ5Z4x2pZ0f3y8bV7n9Z1z6P1Pq0t5zZ0v4vJzZ6b7eZ5Z4wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwBz7UJ9m8s3oEAAAAASUVORK5CYII=">
-<h3>Sprzątanie firm i biur</h3>
-</div>
+<section>
+  <h2>Galeria</h2>
+  <p class="subtitle">Realistyczne zdjęcia naszej pracy</p>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1600585154207-2c9f0d6d0f85">
+    <img src="https://images.unsplash.com/photo-1581578017426-ff10c1e43c0b">
+    <img src="https://images.unsplash.com/photo-1595421519853-52f32bfa2c8c">
+    <img src="https://images.unsplash.com/photo-1527515637462-daf5e4d1b9a0">
+  </div>
+</section>
 
-</div>
+<section class="cta">
+  <h2>Umów sprzątanie już dziś</h2>
+  <p>Zadzwoń lub napisz – przygotuję indywidualną wycenę</p>
+  <p><strong>Justyna – 533 858 447</strong></p>
+  <a href="tel:533858447" class="btn">Zadzwoń teraz</a>
 </section>
 
 <footer>
-<p>JustCleaning © 2026</p>
+  <p>© 2026 JustCleaning – Goleniów i okolice</p>
 </footer>
 
 </body>
